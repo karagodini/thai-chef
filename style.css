@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'MursGothic-WideDark';
+    src: url('fonts/MursGothic-WideDark.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url('fonts/Raleway-Black.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-BlackItalik';
+    src: url('fonts/Raleway-BlackItalic.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('fonts/Raleway-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-BoldItalik';
+    src: url('fonts/Raleway-BoldItalic.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('fonts/Raleway-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    background-image: url(http://thai.ikaragodin.ru/wp-content/uploads/2025/12/bg.svg);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #1b1b1b;
+    border-bottom: 1px solid #F8AC1A;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#branding a {
+    height: 68px;
+}
+
+.header-container nav a {
+    color: #F8AC1A;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.header-container nav a:hover {
+    color: #fafafa;
+}
+
+.header-container .links {
+    display: flex;
+}
+
+.header-container .links a {
+    background: #F8AC1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Стили для выпадающего меню */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1b1b1b;
+            min-width: 250px;
+            z-index: 1000;
+            border: 1px solid #F8AC1A;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 6px;
+            animation: dropdownFade 0.3s;
+        }
+        
+        /* Класс для показа меню */
+        .dropdown-content.show {
+            display: block;
+        }
+        
+        @keyframes dropdownFade {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #212121;
+        }
+        
+        .dropdown-content a:hover {
+            color: #fafafa;
+        }
+        
+        /* Стиль для активной ссылки каталога */
+        .dropdown-toggle.active {
+            color: #fafafa;
+        }
+        
+        /* НОВЫЕ СТИЛИ ДЛЯ КАСТОМНОЙ СТРЕЛОЧКИ */
+        .dropdown-toggle {
+            position: relative;
+            padding-right: 25px;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* Вариант 1: Используем background-image */
+        .dropdown-toggle .custom-arrow {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-image: url('http://thai.ikaragodin.ru/wp-content/uploads/2025/12/down.svg'); /* Ваш файл */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s;
+        }
+        
+        .dropdown-toggle.active .custom-arrow {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        /* Убираем старый символ */
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+.bg-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bg-right {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.container-home-1 {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    top: 125px;
+    height: 500px;
+    padding: 0 100px;
+}
+
+.container-home-1 .content {
+    width: 50%;
+}
+
+.container-home-1 .content .text-top {
+    color: #F8AC1A;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 20px;
+}
+
+.container-home-1 .content .title-top {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.container-home-1 .content .title {
+    color: #fff;
+    font-family: MursGothic-WideDark, sans-serif;
+    font-size: 75px;
+    line-height: 84%;
+    margin-bottom: 30px;
+}
+
+.container-home-1 .content .text {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    max-width: 345px;
+}
+
+.container-home-1 .content .btns {
+    margin-top: 50px;
+}
+
+.container-home-1 .content .btns a {
+    background: #F8AC1A;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 1000px;
+    color: #0d0d0d;
+    font-family: Raleway-ExtraBold, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container-home-1 img {
+    position: absolute;
+    right: 0;
+}
