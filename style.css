@@ -12,20 +12,8 @@
 }
 
 @font-face {
-    font-family: 'Raleway-BlackItalik';
-    src: url('fonts/Raleway-BlackItalic.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Raleway-Bold';
     src: url('fonts/Raleway-Bold.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway-BoldItalik';
-    src: url('fonts/Raleway-BoldItalic.ttf') format('truetype');
     font-style: normal;
 }
 
@@ -41,6 +29,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
 body {
     background-color: #000;
     background-image: url(http://thai.ikaragodin.ru/wp-content/uploads/2025/12/bg.svg);
@@ -48,7 +48,7 @@ body {
     margin: 0 auto;
 }
 
-p {
+p, h1, h2, h3 {
     margin: 0;
 }
 
@@ -201,6 +201,7 @@ header {
     top: 125px;
     height: 500px;
     padding: 0 100px;
+    margin-bottom: 250px;
 }
 
 .container-home-1 .content {
@@ -253,4 +254,608 @@ header {
 .container-home-1 img {
     position: absolute;
     right: 0;
+}
+
+/*slider-1*/
+.slider-1 .carousel-item {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    position: relative;
+    height: 272px;
+    overflow: hidden;
+    padding-left: 100px;
+}
+
+.slider-1 .carousel-item h3 {
+    color: #fff;
+    font-family: MursGothic-WideDark, sans-serif;
+    font-size: 61px;
+    line-height: 84%;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.slider-1 .carousel-item span {
+    margin-left: 90px;
+}
+
+.slider-1 .carousel-item ul {
+    padding-left: 20px;
+}
+
+.slider-1 .carousel-item ul li {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 15px;
+}
+
+.slider-1 .carousel-item .img-1 {
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+    width: auto;
+    z-index: 1;
+}
+
+.slider-1 .carousel-item .img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    z-index: 1;
+}
+
+.slider-1 .carousel-item .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+
+.slider-1 .owl-dot span {
+    width: 17px !important;
+    height: 17px !important;
+    border: 1px solid #F8AC1A;
+    background: none !important;
+}
+
+.slider-1 .owl-dot.active span {
+    background: #F8AC1A !important;
+}
+
+.slider-1 .owl-nav {
+    margin-top: -10px !important;
+}
+/*end slider-1*/
+
+h1 {
+    color: #fff;
+    font-family: MursGothic-WideDark, sans-serif;
+    font-size: 60px;
+    line-height: 92%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.container-home-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-home-2 .left {
+    width: 60%;
+}
+
+.container-home-2 .left .top {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 24px 0 24px 44px;
+}
+
+.container-home-2 .left .top p {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.container-home-2 .left .top .text-top span {
+    font-family: Raleway-Black, sans-serif;
+    font-size: 30px;
+}
+
+.container-home-2 .left .top .text-center {
+    display: flex;
+    align-items: center;
+}
+
+.container-home-2 .left .top .text-center span {
+    background: url(http://thai.ikaragodin.ru/wp-content/uploads/2026/01/container-home-2-bg-1.svg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    width: 120px;
+    height: 57px;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway-Black, sans-serif;
+    font-size: 30px;
+    line-height: 100%;
+    margin: 10px;
+}
+
+.container-home-2 .left .bottom {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    padding: 24px 0 24px 44px;
+}
+
+.container-home-2 .left .bottom p {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.container-home-2 .left .bottom span {
+    border-bottom: 3px solid #F8AC1A;
+}
+
+.container-home-2 .right {
+    position: relative;
+    width: 40%;
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    height: 500px;
+    margin-left: 20px;
+}
+
+.container-home-2 .right .img-1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container-home-2 .right .img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 500px;
+}
+
+.img-bg-1 {
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+}
+
+.img-bg-2 {
+    position: absolute;
+    margin-top: 60px;
+    left: 0;
+}
+
+.img-bg-3 {
+    position: absolute;
+    margin-top: 110px;
+    left: 0;
+}
+
+h2, h2 span {
+    color: #fff;
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 40px;
+}
+
+
+
+h2.desc {
+    font-family: Raleway-Regular, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*каталог*/
+
+.slider-prod .carousel-item {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    height: 390px;
+    margin-top: 80px;
+}
+
+.slider-prod .carousel-item img {
+    height: 240px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -40px;
+}
+
+.slider-prod .carousel-item h3 {
+    color: #fff;
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.slider-prod .carousel-item .desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.slider-prod .carousel-item .text {
+    color: #fff;
+    font-family: Raleway-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slider-dots .owl-dots {
+    border: 1px solid #F8AC1A;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-dots .owl-dot {
+    width: 100%;
+}
+
+.slider-dots .owl-dot span {
+    width: 100% !important;
+    height: 8px !important;
+    background: none !important;
+    margin: 0 !important;
+}
+
+.slider-dots .owl-dot.active span {
+    background: #F8AC1A !important;
+}
+
+.title-prod {
+    margin-top: 50px;
+}
+
+.prod-bg-1 {
+    position: absolute;
+    left: 0;
+}
+
+.prod-bg-2 {
+    position: absolute;
+    right: 0;
+    margin-top: -200px;
+}
+/*end каталог*/
+
+.container-home-3 {
+    display: flex;
+}
+
+.container-home-3 .container {
+    background: url(http://thai.ikaragodin.ru/wp-content/uploads/2026/01/chv.svg) no-repeat;
+    background-position: bottom;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    height: 466px;
+    width: 33%;
+    margin: 0 10px;
+    padding: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-home-3 h3 {
+    color: #fff;
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-home-3 p {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container-home-3 img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.container-home-3 .left {
+    left: 0;
+    transform: translateX(0);
+    z-index: 0;
+}
+
+.container-home-3 .right {
+    right: 0;
+    transform: translateX(-30%);
+    z-index: 0;
+}
+
+.for_from {
+    background: #F8AC1A;
+    border-radius: 100px;
+    color: #0d0d0d;
+    font-family: Raleway-ExtraBold, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-form {
+    display: none;
+    align-items: center;
+    background: #1b1b1b;
+    border-radius: 30px;
+    padding: 27px 37px;
+}
+
+.container-form .left {
+    width: 50%;
+}
+
+.container-form .left h3 {
+    color: #fff;
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.container-form .left p {
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+}
+
+.container-form .right {
+    width: 50%;
+}
+
+.chv-bg {
+    position: absolute;
+    margin-top: -450px;
+    right: 0;
+    z-index: -1;
+}
+
+.slider-media .carousel-item {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+    height: 440px;
+}
+
+.slider-media .carousel-item .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 263px;
+}
+
+.slider-media .carousel-item h3 {
+    color: #fff;
+    font-family: MursGothic-WideDark, sans-serif;
+    font-size: 28px;
+    line-height: 100%;
+    margin: 20px 0;
+}
+
+.slider-media .carousel-item a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-media .carousel-item a:hover {
+    color: #F8AC1A;
+}
+
+.slider-media .carousel-item a img {
+    width: 14px;
+    margin-left: 10px;
+}
+
+.container-slider-media {
+    position: relative;
+}
+
+.custom-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    width: 100%;
+}
+
+.custom-nav .smprev-slide {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 51px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.custom-nav .smnext-slide {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(-180deg);
+    cursor: pointer;
+    width: 36px;
+    height: 51px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.custom-nav button:hover {
+    background: #F8AC1A;
+}
+
+.container-home-4 {
+    display: flex;
+    align-items: center;
+}
+
+.container-home-4 a {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Плавный переход для всех соседних элементов */
+    will-change: transform;
+}
+
+.container-home-4 img {
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    /* Убирает подергивание в Safari */
+    backface-visibility: hidden;
+}
+
+.container-home-4 a:hover {
+    transform: scale(1.15); /* Увеличение на 15% */
+    /* Можно добавить тень для эффекта "поднятия" */
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.15));
+}
+
+.slider-part {
+    margin-bottom: 20px;
+}
+
+/*footer*/
+footer {
+    background: #1b1b1b;
+    border: 1px solid #F8AC1A;
+    border-radius: 30px 30px 0px 0px;
+    height: 400px;
+    padding: 60px 54px;
+    display: flex;
+    margin-top: 100px;
+}
+
+footer .info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info p {
+    color: #F8AC1A;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    line-height: 126%;
+    margin-bottom: 20px;
+}
+
+footer .info a {
+    text-decoration: none;
+    color: #F8AC1A;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+footer menu a {
+    text-decoration: none;
+    color: #F8AC1A;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer menu a img {
+    margin-right: 10px;
+}
+
+footer menu p {
+    color: #F8AC1A;
+    font-family: Raleway-Regular, sans-serif;
+    font-size: 18px;
+    line-height: 126%;
+}
+
+.footer-1 {
+    position: absolute;
+    left: 0;
+    margin-top: -560px;
+    z-index: -1;
+}
+
+.footer-2 {
+    position: absolute;
+    right: 0;
+    margin-top: -660px;
+    z-index: -1;
+}
+/*end footer*/
+
+.top-btn {
+    background: #F8AC1A;
+    border-radius: 100%;
+    width: 93px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.top-btn .text {
+    color: #0d0d0d;
+    font-family: Raleway-SemiBold, sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
 }
