@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
     var slidermedia = $('.slider-media').owlCarousel({
         // Основные настройки
-        items: 3, // Показывать 1 элемент
+        items: 1, // Показывать 1 элемент
         loop: true, // Бесконечная карусель
         center: true, // Центрирование активного элемента
         margin: 20, // Отступы
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
                 dots: false
             },
             600: {
-                items: 2,
+                items: 1,
                 nav: true,
                 nav: false
             },
@@ -139,12 +139,12 @@ jQuery(document).ready(function($) {
         // Адаптивность
         responsive: {
             0: {
-                items: 1,
+                items: 1.5,
                 nav: false,
                 dots: true
             },
             600: {
-                items: 3,
+                items: 1.5,
                 nav: false
             },
             1000: {
@@ -188,12 +188,12 @@ jQuery(document).ready(function($) {
         // Адаптивность
         responsive: {
             0: {
-                items: 1,
+                items: 3,
                 nav: false,
                 dots: false
             },
             600: {
-                items: 3.7,
+                items: 3,
                 nav: false
             },
             1000: {

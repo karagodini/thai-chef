@@ -82,3 +82,66 @@ forForm.addEventListener('click', function(e) {
             });
         });
     });
+
+/*mobile menu*/
+document.addEventListener('DOMContentLoaded', function() {
+    const menuOpen = document.querySelector('.menu-open');
+    const menuClose = document.querySelector('.menu-close');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuOpen.addEventListener('click', function(e) {
+        e.preventDefault()
+        mobileMenu.style.display = 'block'
+        menuOpen.style.display = 'none'
+        menuClose.style.display = 'block'
+    })
+
+    menuClose.addEventListener('click', function(e) {
+        e.preventDefault()
+        mobileMenu.style.display = 'none'
+        menuOpen.style.display = 'block'
+        menuClose.style.display = 'none'
+    })
+})
+/*end mobile menu*/
+
+/*mobile dop menu*/
+document.addEventListener('DOMContentLoaded', function() {
+    const dopMenuBtn = document.querySelector('.dop-menu-btn');
+    const dopMenus = document.querySelectorAll('.dop-menu');
+    
+    function toggleDropdown() {
+        // Перебираем все элементы dop-menu и добавляем/удаляем класс show
+        dopMenus.forEach(menu => {
+            menu.classList.toggle('show');
+        });
+        dopMenuBtn.classList.toggle('active');
+    }
+    
+    dopMenuBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleDropdown();
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            // Удаляем класс show у всех меню
+            dopMenus.forEach(menu => {
+                menu.classList.remove('show');
+            });
+            dopMenuBtn.classList.remove('active');
+        }
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            // Удаляем класс show у всех меню
+            dopMenus.forEach(menu => {
+                menu.classList.remove('show');
+            });
+            dopMenuBtn.classList.remove('active');
+        }
+    });
+});
+/*end mobile dop menu*/
